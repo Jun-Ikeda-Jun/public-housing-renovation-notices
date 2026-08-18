@@ -1,0 +1,347 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>団地改修 公告レイヤー台帳｜団地改修の年次予定表・設計委託公告・入札結果はどこまで公表されているか</title>
+<meta name="description" content="UR・住宅供給公社・県営／政令市営住宅の管理主体ごとに、公営住宅等長寿命化計画の年次改修予定表・設計業務委託の公告・工事入札結果の3層がどこまで公表されているかを事実だけで一覧にしました。現在12主体を掲載。">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#f5f6f8;--panel:#fff;--ink:#1a2230;--sub:#5f6b7d;--ac:#2f5fa8;--ac2:#1b3b6b;--warn:#b45309;--line:#dfe4ea}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1017;--panel:#141c26;--ink:#dde5ef;--sub:#93a2b5;--ac:#5b9bea;--ac2:#2b4f86;--line:#212e3d}}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+header{background:linear-gradient(135deg,var(--ac2),#0a1e38);color:#fff;padding:30px 0 26px}
+h1{margin:0;font-size:22px;line-height:1.4}
+.tag{opacity:.9;margin-top:8px;font-size:13.5px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.stats span{background:rgba(255,255,255,.14);border-radius:20px;padding:4px 12px;font-size:12.5px}
+.note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--ac);border-radius:8px;padding:12px 14px;margin:18px 0;font-size:13px;color:var(--sub)}
+.note b{color:var(--ink)}
+.layers{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.ly{flex:1 1 200px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:12.5px;color:var(--sub)}
+.ly b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px}
+.ly.hi{border-color:var(--ac)}
+.tools{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0 8px;border-bottom:1px solid var(--line)}
+.tools input{width:100%;padding:10px 12px;font-size:15px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+.fils{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.fils button{border:1px solid var(--line);background:var(--panel);color:var(--sub);border-radius:16px;padding:5px 11px;font-size:12.5px;cursor:pointer}
+.fils button.sel{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+main{padding:6px 0 50px}
+.hit{font-size:12.5px;color:var(--sub);margin:10px 2px}
+.c{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
+.ch{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.c h3{margin:0;font-size:17px}
+.kind{font-size:11px;font-weight:600;color:var(--sub);border:1px solid var(--line);border-radius:5px;padding:1px 6px;margin-left:7px;vertical-align:2px}
+.sub{font-size:12px;color:var(--sub);margin-top:2px}
+.rk{flex:0 0 74px;text-align:center;border:1px solid var(--line);border-radius:9px;padding:4px 0;line-height:1.25}
+.rk b{display:block;font-size:19px}.rk span{font-size:10.5px;color:var(--sub)}
+.rkA{border-color:var(--ac)}.rkA b{color:var(--ac)}.rkB b{color:var(--warn)}.rkC b{color:var(--sub)}
+.ln{margin:9px 0 8px;font-size:14px;font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--sub)}
+.facts b{color:var(--ink);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.chip{font-size:11.5px;color:var(--sub);border:1px solid var(--line);border-radius:14px;padding:2px 9px}
+.chip.on{color:var(--ink);border-color:var(--ac)}
+.chip i{font-style:normal;margin-right:4px;font-weight:700}
+.y{color:var(--ac)}.n{color:var(--sub)}.u{color:var(--sub)}
+.ft{margin-top:11px;padding-top:9px;border-top:1px dashed var(--line);font-size:12px;color:var(--sub);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.ft a{color:var(--ac);font-weight:700;text-decoration:none}
+h2{font-size:17px;margin:34px 0 8px}
+.refs{list-style:none;padding:0;margin:0}
+.refs li{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:10px 13px;margin:7px 0;font-size:13.5px}
+.refs a{color:var(--ac);text-decoration:none;font-weight:600}
+.refs .s{display:block;font-size:11.5px;color:var(--sub);margin-top:2px}
+.legend{font-size:12.5px;color:var(--sub);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.legend p{margin:0 0 8px}.legend p:last-child{margin:0}
+footer{border-top:1px solid var(--line);padding:20px 0 40px;font-size:12px;color:var(--sub)}
+@media(max-width:520px){h1{font-size:19px}.facts{gap:3px 10px}.rk{flex:0 0 66px}}
+</style></head><body>
+<header><div class="wrap">
+<h1>団地改修 公告レイヤー台帳</h1>
+<div class="tag">UR・住宅供給公社・県営／政令市営住宅の管理主体ごとに、①長寿命化計画の年次改修予定表 ②設計業務委託の公告 ③工事入札結果 の3層が「どこまで公表されているか」を事実だけで一覧にしました。</div>
+<div class="stats"><span>掲載 12主体</span><span>年次改修予定表を確認 3件</span><span>設計委託公告の導線を確認 1件</span><span>給排水の記載を確認 2件</span><span>2026-08-18時点</span></div>
+</div></header>
+
+<div class="wrap">
+<div class="note">工事の公告が出てから動くと遅い。設計業務委託の公告は工事公告より前に出て、その手前に長寿命化計画の年次改修予定表がある。この台帳は、管理主体ごとにその3層がどこに・どの粒度で公表されているかを整理し、出典ページへ直接リンクします。掲載するのは公表状況という事実と公式リンクだけで、計画書や入札公告の中身は転載しません。</div>
+
+<div class="layers">
+  <div class="ly hi"><b>① 長寿命化計画の年次改修予定表</b>いつ・どの団地を改修するかが年度単位で書かれる層。いちばん手前。</div>
+  <div class="ly hi"><b>② 設計業務委託の公告</b>実施設計の発注。工事の公告より前に出る層。</div>
+  <div class="ly"><b>③ 工事の入札公告・結果</b>ここで見つけたときには、もう動いている層。</div>
+</div>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="管理主体名・都道府県で絞り込む（例: 愛知 / 公社）" autocomplete="off">
+  <div class="fils" id="fb">
+    <button class="sel" data-v="">地域すべて</button>
+    <button data-v="北海道・東北">北海道・東北 3</button><button data-v="関東">関東 7</button><button data-v="近畿">近畿 1</button><button data-v="全国（UR等）">全国（UR等） 1</button>
+  </div>
+  <div class="fils" id="fk">
+    <button class="sel" data-v="">種別すべて</button>
+    <button data-v="UR">UR 1</button><button data-v="都道府県">都道府県 3</button><button data-v="市">市 6</button><button data-v="公社">公社 2</button>
+  </div>
+  <div class="fils" id="fr">
+    <button class="sel" data-v="">先回り度すべて</button>
+    <button data-v="B">B 計画までは追える 4</button><button data-v="C">C 手前の層は未確認 8</button>
+  </div>
+</div>
+
+<main>
+<div class="hit" id="hit">12件</div>
+<article class="c" data-block="近畿" data-kind="市" data-rank="B" data-name="京都市京都府京都市電子入札システム 案件詳細情報＜工事＞（市営住宅修繕工事設計業務委託）市">
+  <div class="ch">
+    <div><h3>京都市<span class="kind">市</span></h3>
+      <div class="sub">近畿 ｜ 京都府 ｜ 出典の層: 設計委託公告</div></div>
+    <div class="rk rkB"><b>B</b><span>先回り 3/6</span></div>
+  </div>
+  <div class="ln">京都市電子入札システム 案件詳細情報＜工事＞（市営住宅修繕工事設計業務委託）</div>
+  <div class="facts">
+    <span>計画期間: <b>不明</b></span>
+    <span>本文中の最新年度: <b>2026年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip "><i class="u">?</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip on"><i class="y">✓</i>改修の工事種別の記載</span><span class="chip on"><i class="y">✓</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip on"><i class="y">✓</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 不明 ／ 収集: 2026-08-18</span>
+    <a href="https://www2.nyusatsu.city.kyoto.lg.jp/keiyaku/ebid/kouji/2026/000357.htm" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="市" data-rank="B" data-name="伊勢崎市群馬県伊勢崎市公営住宅等長寿命化計画市">
+  <div class="ch">
+    <div><h3>伊勢崎市<span class="kind">市</span></h3>
+      <div class="sub">関東 ｜ 群馬県 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkB"><b>B</b><span>先回り 3/6</span></div>
+  </div>
+  <div class="ln">伊勢崎市公営住宅等長寿命化計画</div>
+  <div class="facts">
+    <span>計画期間: <b>2025年度〜2054年度（短期2025-2029/中期</b></span>
+    <span>本文中の最新年度: <b>2054年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip on"><i class="y">✓</i>団地別・年度別の改修予定表</span><span class="chip on"><i class="y">✓</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2026-03-27 ／ 収集: 2026-08-18</span>
+    <a href="https://www.city.isesaki.lg.jp/soshiki/kensetu/jyutaku/jyuutakuseisaku/21581.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="北海道・東北" data-kind="市" data-rank="B" data-name="会津若松市福島県会津若松市市営住宅長寿命化計画市">
+  <div class="ch">
+    <div><h3>会津若松市<span class="kind">市</span></h3>
+      <div class="sub">北海道・東北 ｜ 福島県 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkB"><b>B</b><span>先回り 3/6</span></div>
+  </div>
+  <div class="ln">会津若松市市営住宅長寿命化計画</div>
+  <div class="facts">
+    <span>計画期間: <b>2021年度〜2030年度</b></span>
+    <span>本文中の最新年度: <b>2030年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip on"><i class="y">✓</i>団地別・年度別の改修予定表</span><span class="chip on"><i class="y">✓</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2021-04-07 ／ 収集: 2026-08-18</span>
+    <a href="https://www.city.aizuwakamatsu.fukushima.jp/docs/2021040600010/" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="市" data-rank="B" data-name="相模原市神奈川県相模原市市営住宅ストック総合活用兼長寿命化計画市">
+  <div class="ch">
+    <div><h3>相模原市<span class="kind">市</span></h3>
+      <div class="sub">関東 ｜ 神奈川県 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkB"><b>B</b><span>先回り 3/6</span></div>
+  </div>
+  <div class="ln">相模原市市営住宅ストック総合活用兼長寿命化計画</div>
+  <div class="facts">
+    <span>計画期間: <b>2020年度〜2029年度</b></span>
+    <span>本文中の最新年度: <b>2029年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip on"><i class="y">✓</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2024-04-01 ／ 収集: 2026-08-18</span>
+    <a href="https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/1004804/1019824.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="全国（UR等）" data-kind="UR" data-rank="C" data-name="UR都市機構全国共用部分の計画的修繕についてUR">
+  <div class="ch">
+    <div><h3>UR都市機構<span class="kind">UR</span></h3>
+      <div class="sub">全国（UR等） ｜ 全国 ｜ 出典の層: その他</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 2/6</span></div>
+  </div>
+  <div class="ln">共用部分の計画的修繕について</div>
+  <div class="facts">
+    <span>計画期間: <b>不明</b></span>
+    <span>本文中の最新年度: <b>不明</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip on"><i class="y">✓</i>改修の工事種別の記載</span><span class="chip on"><i class="y">✓</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 不明 ／ 収集: 2026-08-18</span>
+    <a href="https://www.ur-net.go.jp/chintai_portal/kyojyusha/syuzen/syuzen-const.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="公社" data-rank="C" data-name="東京都住宅供給公社東京都公社一般賃貸住宅の再編整備計画公社">
+  <div class="ch">
+    <div><h3>東京都住宅供給公社<span class="kind">公社</span></h3>
+      <div class="sub">関東 ｜ 東京都 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 1/6</span></div>
+  </div>
+  <div class="ln">公社一般賃貸住宅の再編整備計画</div>
+  <div class="facts">
+    <span>計画期間: <b>2019年度〜2028年度</b></span>
+    <span>本文中の最新年度: <b>2028年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip on"><i class="y">✓</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 不明 ／ 収集: 2026-08-18</span>
+    <a href="https://www.to-kousya.or.jp/action/page2.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="北海道・東北" data-kind="都道府県" data-rank="C" data-name="北海道北海道北海道の住宅施策について（道営住宅整備活用計画（長寿命化計画）等の掲載ページ）都道府県">
+  <div class="ch">
+    <div><h3>北海道<span class="kind">都道府県</span></h3>
+      <div class="sub">北海道・東北 ｜ 北海道 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 1/6</span></div>
+  </div>
+  <div class="ln">北海道の住宅施策について（道営住宅整備活用計画（長寿命化計画）等の掲載ページ）</div>
+  <div class="facts">
+    <span>計画期間: <b>不明</b></span>
+    <span>本文中の最新年度: <b>不明</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2026-03-31 ／ 収集: 2026-08-18</span>
+    <a href="https://www.pref.hokkaido.lg.jp/kn/jtk/juutakusesaku.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="都道府県" data-rank="C" data-name="千葉県千葉県千葉県県営住宅長寿命化計画都道府県">
+  <div class="ch">
+    <div><h3>千葉県<span class="kind">都道府県</span></h3>
+      <div class="sub">関東 ｜ 千葉県 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 1/6</span></div>
+  </div>
+  <div class="ln">千葉県県営住宅長寿命化計画</div>
+  <div class="facts">
+    <span>計画期間: <b>2025年度〜2034年度</b></span>
+    <span>本文中の最新年度: <b>2034年度</b></span>
+    <span>形式: <b>HTML</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2025-03-28 ／ 収集: 2026-08-18</span>
+    <a href="https://www.pref.chiba.lg.jp/juutaku/keikaku/kendoseibi/tyoujumyoukakaitei.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="市" data-rank="C" data-name="横浜市神奈川県横浜市公営住宅等長寿命化計画／横浜市市営住宅の再生に関する基本的な考え方市">
+  <div class="ch">
+    <div><h3>横浜市<span class="kind">市</span></h3>
+      <div class="sub">関東 ｜ 神奈川県 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 1/6</span></div>
+  </div>
+  <div class="ln">横浜市公営住宅等長寿命化計画／横浜市市営住宅の再生に関する基本的な考え方</div>
+  <div class="facts">
+    <span>計画期間: <b>2020年度〜2029年度</b></span>
+    <span>本文中の最新年度: <b>不明</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2026-03-30 ／ 収集: 2026-08-18</span>
+    <a href="https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/shiryo/shieijutakukeikaku.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="北海道・東北" data-kind="市" data-rank="C" data-name="千歳市北海道第2期千歳市公営住宅等長寿命化計画（本編・概要版）市">
+  <div class="ch">
+    <div><h3>千歳市<span class="kind">市</span></h3>
+      <div class="sub">北海道・東北 ｜ 北海道 ｜ 出典の層: 計画</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 1/6</span></div>
+  </div>
+  <div class="ln">第2期千歳市公営住宅等長寿命化計画（本編・概要版）</div>
+  <div class="facts">
+    <span>計画期間: <b>2023年度〜2032年度</b></span>
+    <span>本文中の最新年度: <b>2032年度</b></span>
+    <span>形式: <b>PDF</b></span>
+    <span>工事の入札公告: <b>不明</b></span>
+    <span>入札・契約結果: <b>不明</b></span>
+  </div>
+  <div class="chips"><span class="chip on"><i class="y">✓</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip "><i class="u">?</i>工事の入札公告を追える</span><span class="chip "><i class="u">?</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2023-04-01 ／ 収集: 2026-08-18</span>
+    <a href="https://www.city.chitose.lg.jp/c70/1002791/1002792/1002801/1005434.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="都道府県" data-rank="C" data-name="神奈川県神奈川県住宅営繕事務所 契約課（入札にかかる情報・発注案件等）都道府県">
+  <div class="ch">
+    <div><h3>神奈川県<span class="kind">都道府県</span></h3>
+      <div class="sub">関東 ｜ 神奈川県 ｜ 出典の層: 入札情報の入口</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 0/6</span></div>
+  </div>
+  <div class="ln">住宅営繕事務所 契約課（入札にかかる情報・発注案件等）</div>
+  <div class="facts">
+    <span>計画期間: <b>不明</b></span>
+    <span>本文中の最新年度: <b>2026年度</b></span>
+    <span>形式: <b>PDF/Excel</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>あり</b></span>
+  </div>
+  <div class="chips"><span class="chip "><i class="u">?</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip on"><i class="y">✓</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 2026-08-04 ／ 収集: 2026-08-18</span>
+    <a href="https://www.pref.kanagawa.jp/docs/h5z/keiyaku/keiyakutop.html" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article><article class="c" data-block="関東" data-kind="公社" data-rank="C" data-name="横浜市住宅供給公社神奈川県入札情報（入札契約情報）公社">
+  <div class="ch">
+    <div><h3>横浜市住宅供給公社<span class="kind">公社</span></h3>
+      <div class="sub">関東 ｜ 神奈川県 ｜ 出典の層: 入札情報の入口</div></div>
+    <div class="rk rkC"><b>C</b><span>先回り 0/6</span></div>
+  </div>
+  <div class="ln">入札情報（入札契約情報）</div>
+  <div class="facts">
+    <span>計画期間: <b>不明</b></span>
+    <span>本文中の最新年度: <b>不明</b></span>
+    <span>形式: <b>HTML</b></span>
+    <span>工事の入札公告: <b>あり</b></span>
+    <span>入札・契約結果: <b>あり</b></span>
+  </div>
+  <div class="chips"><span class="chip "><i class="u">?</i>長寿命化計画を公表</span><span class="chip "><i class="u">?</i>団地別・年度別の改修予定表</span><span class="chip "><i class="u">?</i>改修の工事種別の記載</span><span class="chip "><i class="u">?</i>給排水・給水設備の改修を明記</span><span class="chip "><i class="u">?</i>団地・住棟の一覧（戸数/建設年度）</span><span class="chip "><i class="u">?</i>設計業務委託の公告を追える</span><span class="chip on"><i class="y">✓</i>工事の入札公告を追える</span><span class="chip on"><i class="y">✓</i>入札・契約結果の公表</span></div>
+  <div class="ft"><span>最終更新: 不明 ／ 収集: 2026-08-18</span>
+    <a href="https://www.yokohama-kousya.or.jp/tender/" target="_blank" rel="noopener">出典ページを開く →</a></div>
+</article>
+
+<h2>この表の見かた</h2>
+<div class="legend">
+<p>右上の <b>先回り度</b> は、工事の公告より<b>手前</b>の層をその主体がどれだけ公表しているかを機械的に点数化したものです（年次改修予定表 2点／長寿命化計画 1点／設計業務委託の公告の導線 2点／給排水設備の改修の明記 1点＝6点満点）。A=5点以上、B=3〜4点、C=2点以下。<b>改修の規模や発注量とは関係ありません。</b></p>
+<p><b>✓</b> = 出典ページの本文に記載・導線を確認 ／ <b>−</b> = ないと明記 ／ <b>?</b> = 本文からは確認できず（<b>公表されていないとは限りません</b>）。添付されたPDF・Excelの中身までは開いて確認していません。計画の本体はPDFで配られることが多いため、入口ページだけを見た結果として「?」が並ぶのはふつうです。</p>
+<p><b>計画期間</b>と<b>本文中の最新年度</b>は、出典ページの本文に書かれていた表記を拾ったものです。計画の改定で古い版が残っている場合もあるため、実際の最新版は出典ページでご確認ください。</p>
+<p>掲載しているのは「何がどこまで公表されているか」という事実と公式URLだけです。<b>計画書や公告の中身（団地名・住棟名・金額・落札者名など）は転載していません。</b>具体的な対象や時期は、必ずリンク先の一次資料でご確認ください。</p>
+</div>
+
+<h2>制度の一次情報</h2>
+<ul class="refs">
+<li><a href="https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000024.html" target="_blank" rel="noopener">公営住宅等長寿命化計画策定指針 →</a><span class="s">国土交通省</span></li><li><a href="https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk2_000021.html" target="_blank" rel="noopener">公営住宅制度について →</a><span class="s">国土交通省</span></li><li><a href="https://www.ur-net.go.jp/order/" target="_blank" rel="noopener">UR都市機構 入札・契約情報 →</a><span class="s">独立行政法人都市再生機構</span></li><li><a href="https://elaws.e-gov.go.jp/document?lawid=412AC0100000127" target="_blank" rel="noopener">公共工事の入札及び契約の適正化の促進に関する法律 →</a><span class="s">e-Gov法令検索</span></li>
+</ul>
+</main>
+
+<footer>
+<p>本サイトは各管理主体が自ら公表しているページを調べ、その公表状況（どの資料が・どの粒度で公表されているか）と公式URLのみを掲載しています。改修の実施を保証するものではなく、受注機会をあっせんするものでもありません。計画の内容・年度・公告の有無は必ず各公式ページでご確認ください。誤りの指摘は出典ページの記載を優先します。</p>
+<p>公営住宅等長寿命化計画は「公営住宅等長寿命化計画策定指針」（国土交通省）に基づき各事業主体が策定・公表するものです。地方公共団体の入札公告・入札結果の公表は地方自治法施行令および各団体の契約規則等によります。</p>
+<p>このページは静的HTMLです。入力内容はブラウザ内の絞り込みにのみ使われ、どこにも送信されません。会員登録・決済・お問い合わせフォームはありません。</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('.c')), hit=document.getElementById('hit');
+  var q='', blk='', knd='', rk='';
+  function apply(){
+    var n=0;
+    cards.forEach(function(c){
+      var ok=(!blk||c.dataset.block===blk)&&(!knd||c.dataset.kind===knd)&&(!rk||c.dataset.rank===rk)&&(!q||c.dataset.name.indexOf(q)>=0);
+      c.style.display=ok?'':'none'; if(ok)n++;
+    });
+    hit.textContent=n+'件';
+  }
+  document.getElementById('q').addEventListener('input',function(e){ q=e.target.value.trim(); apply(); });
+  function grp(id,set){
+    var box=document.getElementById(id); if(!box) return;
+    box.addEventListener('click',function(e){
+      var b=e.target.closest('button'); if(!b) return;
+      [].slice.call(box.children).forEach(function(x){ x.classList.remove('sel'); });
+      b.classList.add('sel'); set(b.dataset.v||''); apply();
+    });
+  }
+  grp('fb',function(v){ blk=v; });
+  grp('fk',function(v){ knd=v; });
+  grp('fr',function(v){ rk=v; });
+})();
+</script>
+
+<script data-goatcounter="https://junikeda.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body></html>
